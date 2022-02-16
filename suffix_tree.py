@@ -12,7 +12,7 @@ class SuffixTree(Tree):
             self._parent = parent
             self._children = ProbeHashMap(cap=26)  # in order to have a lookup table for english characters
             self._marker = set()
-            self._length = length
+            self._length = length  #il parametro length definisce la lunghezza dalla radice fino alla sottostringa corrente
 
     class Position(Tree.Position):
 
